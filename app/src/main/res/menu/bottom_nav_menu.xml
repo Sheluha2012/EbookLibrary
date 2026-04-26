@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_nav_library"
+        android:icon="@drawable/ic_library_logo"
+        android:title="@string/bottom_nav_library"
+        android:orderInCategory="1"/>
+    <item
+        android:id="@+id/bottom_nav_profile"
+        android:icon="@drawable/ic_profile_logo"
+        android:title="@string/bottom_nav_profile"
+        android:orderInCategory="2"/>
+    <item
+        android:id="@+id/bottom_nav_settings"
+        android:icon="@drawable/ic_settings_logo"
+        android:title="@string/bottom_nav_settings"
+        android:orderInCategory="3"/>
+</menu>

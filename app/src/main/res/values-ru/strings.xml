@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Book Library</string>
+
+    <!-- Bottom Nav -->
+    <string name="bottom_nav_library">Библиотека</string>
+    <string name="bottom_nav_profile">Профиль</string>
+    <string name="bottom_nav_settings">Настройки</string>
+
+    <!-- Top -->
+    <string name="top_settings">Настройки</string>
+    <string name="top_library">Библиотека</string>
+    <string name="top_profile">Профиль</string>
+
+    <!-- Settings -->
+    <string name="settings_theme">Тема приложения</string>
+    <string name="settings_general">Общие</string>
+    <!-- Night Mode -->
+    <string name="settings_theme_night_mode">Ночная тема</string>
+    <string name="settings_theme_light_mode">Светлая тема</string>
+    <string name="settings_night_mode_summary">Выбор светлой/темной темы</string>
+    <!-- General -->
+    <string name="settings_language">Язык</string>
+    <string name="settings_clear_cache">Очистить кэш поиска</string>
+    <string name="settings_clear_cache_summary">Удалить сохранённые результаты поиска</string>
+    <string name="settings_clear_cache_confirm">Кэшированные результаты поиска будут удалены</string>
+    <string name="settings_cache_cleared">Кэш очищен</string>
+    <!-- About -->
+    <string name="settings_about">О приложении</string>
+    <string name="settings_developers">Разработчики</string>
+    <string name="title_activity_settings_night_mode">SettingsNightModeActivity</string>
+
+    <!-- Library -->
+    <string name="library_empty_title">Библиотека пуста</string>
+    <string name="library_empty_subtitle">Добавьте первую книгу</string>
+    <string name="library_add_book">Добавить книгу</string>
+    <string name="dialog_delete_title">Удалить книгу?</string>
+    <string name="dialog_delete_message">Это действие нельзя отменить</string>
+    <string name="dialog_cancel">Отмена</string>
+    <string name="dialog_delete">Удалить</string>
+
+    <string name="book_title">Название *</string>
+    <string name="book_author">Автор *</string>
+    <string name="book_genre">Жанр</string>
+    <string name="book_description">Описание</string>
+    <string name="book_save">Сохранить</string>
+    <string name="add_book">Добавить книгу</string>
+    <string name="edit_book">Редактировать книгу</string>
+    <string name="error_field_required">Обязательное поле</string>
+
+    <!-- Search -->
+    <string name="search_hint">Поиск книг…</string>
+    <string name="search_book_added">Книга добавлена в библиотеку</string>
+    <string name="top_search">Поиск</string>
+
+    <string name="no_internet">Нет подключения к интернету</string>
+    <string name="search_cached">Нет интернета, показаны кэшированные результаты</string>
+</resources>

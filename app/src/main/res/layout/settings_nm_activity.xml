@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_night_mode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/app_theme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/settings_theme_night_mode"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_night_mode">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_sett_lm"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:text="@string/settings_theme_light_mode"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/ic_light_mode"
+            app:iconGravity="textStart"
+            app:iconPadding="15dp"
+            app:iconTint="@color/app_theme" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_sett_nm"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/settings_theme_night_mode"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/ic_dark_mode"
+            app:iconGravity="textStart"
+            app:iconPadding="15dp"
+            app:iconTint="@color/app_theme" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:title="@string/settings_theme">
+
+        <SwitchPreferenceCompat
+            app:key="night_mode"
+            app:title="@string/settings_theme_night_mode"
+            app:summary="@string/settings_night_mode_summary"
+            app:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="@string/settings_general">
+
+        <ListPreference
+            app:key="language"
+            app:title="@string/settings_language"
+            app:summary="@string/settings_language"
+            app:entries="@array/languages"
+            app:entryValues="@array/languages_values"
+            app:defaultValue="english"/>
+
+        <Preference
+            app:key="clear_cache"
+            app:title="@string/settings_clear_cache"
+            app:summary="@string/settings_clear_cache_summary"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="@string/settings_about">
+
+        <Preference
+            app:key="developers"
+            app:title="@string/settings_developers" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
