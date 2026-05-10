@@ -9,16 +9,19 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import android.content.Context
+import android.content.Intent
 import android.content.res.Configuration
 import android.view.View
 import android.widget.TextView
 import androidx.preference.PreferenceManager
+import com.example.booklibrary.ui.auth.AuthActivity
 import com.example.booklibrary.ui.library.LibraryFragment
 import com.example.booklibrary.ui.profile.ProfileFragment
 import com.example.booklibrary.ui.settings.SettingsFragment
 import com.example.booklibrary.utils.NetworkMonitor
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.firebase.auth.FirebaseAuth
 import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
@@ -30,6 +33,16 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         installSplashScreen()
         super.onCreate(savedInstanceState)
+
+        val auth = FirebaseAuth.getInstance()
+        if (auth.currentUser == null) {
+            val intent = Intent(this, AuthActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(intent)
+            finish()
+            return
+        }
+
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
@@ -39,6 +52,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         toolbar = findViewById(R.id.top_toolbar)
+        setSupportActionBar(toolbar)
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
 
         if (savedInstanceState == null) {

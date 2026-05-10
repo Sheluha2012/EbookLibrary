@@ -1,7 +1,9 @@
 [versions]
 agp = "8.11.2"
 coreSplashscreen = "1.2.0"
+firebaseBom = "33.1.2"
 glide = "5.0.5"
+imagekitAndroid = "3.0.1"
 kotlin = "2.0.21"
 coreKtx = "1.17.0"
 junit = "4.13.2"
@@ -9,10 +11,12 @@ junitVersion = "1.3.0"
 espressoCore = "3.7.0"
 appcompat = "1.7.1"
 kotlinxCoroutinesAndroid = "1.10.2"
+kotlinxCoroutinesPlayServices = "1.10.2"
 lifecycleViewmodelKtx = "2.10.0"
 material = "1.13.0"
 activity = "1.12.3"
 constraintlayout = "2.2.1"
+playServicesTasks = "18.4.1"
 preference = "1.2.0"
 preferenceVersion = "1.2.1"
 recyclerview = "1.4.0"
@@ -20,6 +24,8 @@ retrofit = "3.0.0"
 roomRuntime = "2.8.4"
 ksp = "2.0.21-1.0.27"
 room = "2.6.1"
+workRuntimeKtx = "2.11.2"
+firebaseFirestoreKtx = "26.2.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -30,17 +36,25 @@ androidx-recyclerview = { module = "androidx.recyclerview:recyclerview", version
 androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomRuntime" }
 androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomRuntime" }
 androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
+androidx-work-runtime-ktx = { module = "androidx.work:work-runtime-ktx", version.ref = "workRuntimeKtx" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+firebase-auth-ktx = { module = "com.google.firebase:firebase-auth-ktx" }
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
+firebase-firestore-ktx = { module = "com.google.firebase:firebase-firestore-ktx" }
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+google-firebase-firestore-ktx = { group = "com.google.firebase", name = "firebase-firestore-ktx" }
+imagekit-android = { group = "com.github.imagekit-developer", name = "imagekit-android", version.ref = "imagekitAndroid" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
+kotlinx-coroutines-play-services = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-play-services", version.ref = "kotlinxCoroutinesPlayServices" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 androidx-preference = { group = "androidx.preference", name = "preference", version.ref = "preference" }
+play-services-tasks = { module = "com.google.android.gms:play-services-tasks", version.ref = "playServicesTasks" }
 preference = { group = "androidx.preference", name = "preference", version.ref = "preferenceVersion" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }

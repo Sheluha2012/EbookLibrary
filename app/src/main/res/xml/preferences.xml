@@ -32,12 +32,24 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        app:title="@string/settings_about">
+        app:title="@string/settings_notif">
+        <SwitchPreferenceCompat
+            app:key="notifications_enabled"
+            app:title="@string/settings_notif_text1"
+            app:defaultValue="false" />
 
         <Preference
-            app:key="developers"
-            app:title="@string/settings_developers" />
+            app:key="notification_time"
+            app:title="@string/settings_notif_text2"
+            app:summary="@string/settings_notif_text2_time"
+            app:dependency="notifications_enabled" />
+    </PreferenceCategory>
 
+    <PreferenceCategory app:title="@string/settings_account">
+        <Preference
+            app:key="logout"
+            app:title="@string/settings_logout_title"
+            app:summary="@string/settings_logout_summary"/>
     </PreferenceCategory>
 
 </PreferenceScreen>

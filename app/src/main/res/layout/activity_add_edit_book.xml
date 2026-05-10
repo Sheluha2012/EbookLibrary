@@ -81,8 +81,42 @@
                 android:inputType="textMultiLine"
                 android:minLines="3"
                 android:gravity="top"/>
-
         </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/iv_preview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone"
+            android:background="#EEEEEE"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_camera"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сделать фото обложки"
+            android:layout_marginBottom="8dp"
+            app:icon="@android:drawable/ic_menu_camera"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_select_image"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_cover"
+            android:layout_marginBottom="8dp"
+            app:icon="@android:drawable/ic_menu_gallery"/>
+
+        <ProgressBar
+            android:id="@+id/progress_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_save"

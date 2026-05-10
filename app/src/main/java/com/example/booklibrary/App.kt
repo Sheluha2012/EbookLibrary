@@ -1,10 +1,10 @@
 package com.example.booklibrary
 
 import android.app.Application
-import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.preference.PreferenceManager
-import java.util.Locale
+import com.imagekit.android.ImageKit
+import com.imagekit.android.entity.TransformationPosition
 
 class App : Application() {
 
@@ -19,5 +19,11 @@ class App : Application() {
             else AppCompatDelegate.MODE_NIGHT_NO
         )
 
+        ImageKit.init(
+            context = this,
+            publicKey = "public_tVvP41567/wDGdW86vaUQJqOlqQ=",
+            urlEndpoint = "https://ik.imagekit.io/6qjc3wybl/",
+            transformationPosition = TransformationPosition.PATH
+        )
     }
 }

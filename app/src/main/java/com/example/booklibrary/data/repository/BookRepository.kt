@@ -6,6 +6,8 @@ import com.example.booklibrary.data.db.BookDao
 
 class BookRepository(private val bookDao: BookDao) {
     val allBooks: LiveData<List<Book>> = bookDao.getAllBooks()
+    val allBooksSortedByTitle: LiveData<List<Book>> = bookDao.getAllBooksSortedByTitle()
+    val allBooksSortedByAuthor: LiveData<List<Book>> = bookDao.getAllBooksSortedByAuthor()
 
     suspend fun insert(book: Book) = bookDao.insert(book)
     suspend fun update(book: Book) = bookDao.update(book)

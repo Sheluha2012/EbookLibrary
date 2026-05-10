@@ -25,10 +25,20 @@
     <string name="settings_clear_cache_summary">Удалить сохранённые результаты поиска</string>
     <string name="settings_clear_cache_confirm">Кэшированные результаты поиска будут удалены</string>
     <string name="settings_cache_cleared">Кэш очищен</string>
+    <!-- Notif settings -->
+    <string name="settings_notif">Уведомления</string>
+    <string name="settings_notif_text1">Напоминания о чтении</string>
+    <string name="settings_notif_text2">Время напоминания</string>
+    <string name="settings_notif_text2_time">Нажмите, чтобы выбрать время</string>
+    <string name="settings_notif_time">Уведомление в </string>
     <!-- About -->
     <string name="settings_about">О приложении</string>
     <string name="settings_developers">Разработчики</string>
     <string name="title_activity_settings_night_mode">SettingsNightModeActivity</string>
+    <!-- Logout -->
+    <string name="settings_logout_title">Выйти из аккаунта</string>
+    <string name="settings_logout_summary">Завершить текущую сессию</string>
+    <string name="settings_account">Аккаунт</string>
 
     <!-- Library -->
     <string name="library_empty_title">Библиотека пуста</string>
@@ -53,6 +63,32 @@
     <string name="search_book_added">Книга добавлена в библиотеку</string>
     <string name="top_search">Поиск</string>
 
+    <string name="sort_title">Сортировка</string>
+    <string name="sort_by_date">По дате добавления</string>
+    <string name="sort_by_title">По названию (А-Я)</string>
+    <string name="sort_by_author">По автору (А-Я)</string>
+
+    <string name="filter_title">Выберите жанры</string>
+    <string name="filter_reset">Сбросить</string>
+    <string name="filter_cancel">Отмена</string>
+    <string name="filter_apply">Применить</string>
+
     <string name="no_internet">Нет подключения к интернету</string>
     <string name="search_cached">Нет интернета, показаны кэшированные результаты</string>
+
+    <!-- Notifications -->
+    <string name="notif_title">Время почитать!</string>
+    <string name="notif_text">Ваша библиотека ждет вас. Откройте книгу прямо сейчас.</string>
+
+    <string name="select_cover">Выбрать обложку</string>
+
+    <!-- Auth -->
+    <string name="auth_title_login">С возврашением!</string>
+    <string name="auth_btn_login">Войти</string>
+    <string name="auth_btn_to_reg">Нет аккаунта? Зарегистрироваться</string>
+    <string name="auth_title_reg">Создать аккаунт</string>
+    <string name="auth_btn_reg">Зарегистрироваться</string>
+    <string name="auth_btn_to_login">Уже есть аккаунт? Войти</string>
+    <string name="email">Адрес эл. почты</string>
+    <string name="password">Пароль</string>
 </resources>
